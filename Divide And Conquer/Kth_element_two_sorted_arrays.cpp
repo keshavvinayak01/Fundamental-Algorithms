@@ -41,5 +41,7 @@ int main() {
         for(int i = 0 ; i < n ; i++) cin >> arr1[i];
         for(int i = 0 ; i < m ; i++) cin >> arr2[i];
         cout << KthSmallest(arr1, arr2, 0, n-1, 0, m-1, k-1) << endl;
+        delete[] arr1;
+        delete[] arr2;
     }
 }
